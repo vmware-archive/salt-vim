@@ -1,0 +1,4 @@
+Vim files for working on Salt files.
+
+syntax/sls.vim
+    A syntax file for editing yaml + jinja sls files.
