@@ -1,11 +1,8 @@
 " Vim syntax file
 " Language: Salt States template
 " Maintainer: Seth House <seth@eseth.com>
-" Last Change: 2011 Dec 05
+" Last Change: 2012 June 20
 "
-" You probably want this in your .vimrc for now:
-" au BufNewFile,BufRead *.sls set ft=sls
-
 if exists("b:current_syntax")
   finish
 endif
