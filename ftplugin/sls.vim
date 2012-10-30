@@ -3,7 +3,9 @@ setlocal expandtab
 setlocal softtabstop=2
 setlocal shiftwidth=2
 " do not display right side colorcolumn
-setlocal colorcolumn=
+if version >= 703
+    setlocal colorcolumn=
+endif
 
 setlocal wrap
 
