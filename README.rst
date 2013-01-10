@@ -14,11 +14,16 @@ Or (preferably) use one of the popular tools to (sanely) manage plugins:
 - Pathogen: https://github.com/tpope/vim-pathogen
 - Vundle: https://github.com/gmarik/vundle
 
-Files can be copied into any other directory where vim looks for its runtime
-files, like ``/etc/vim/``.
+.. note:: Require Vim settings
 
-Command ``:set runtimepath`` will show all such paths. Read ``:help
-runtimepath`` for more info.
+    You will also need to specify the following settings in your ``~/.vimrc``::
+
+        set nocompatible
+        filetype plugin indent on
+
+Alternately, files can be copied into any other directory where vim looks for
+its runtime files, like ``/etc/vim/``. Command ``:set runtimepath`` will show
+all such paths. Read ``:help runtimepath`` for more info.
 
 Files
 =====
