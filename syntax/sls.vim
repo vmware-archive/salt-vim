@@ -23,6 +23,10 @@ let b:current_syntax = ''
 unlet b:current_syntax
 syntax include @Jinja syntax/django.vim
 
+let g:NERDCustomDelimiters = { 
+  \ 'sls': { 'left': '#' },
+\ }
+
 syn cluster djangoBlocks add=djangoTagBlock,djangoVarBlock,djangoComment,djangoComBlock
 syn region djangoTagBlock start="{%" end="%}" contains=djangoStatement,djangoFilter,djangoArgument,djangoTagError display containedin=ALLBUT,@djangoBlocks
 syn region djangoVarBlock start="{{" end="}}" contains=djangoFilter,djangoArgument,djangoVarError display containedin=ALLBUT,@djangoBlocks
