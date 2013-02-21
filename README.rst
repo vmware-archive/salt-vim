@@ -19,6 +19,19 @@ You will also need to specify the following settings in your ``~/.vimrc``::
     set nocompatible
     filetype plugin indent on
 
+Note: It's possible you may be presented with an error stating something
+similar to:
+
+"E319: Sorry, the command is not available in this version: filetype plugin inden
+t on"
+
+If you get this, specify the following settings in your ``~/.vimrc`` instead::
+
+    set nocompatible
+    set tabstop=2
+    set shiftwidth=2
+    set expandtab
+
 Alternately, files can be copied into any other directory where vim looks for
 its runtime files, like ``/etc/vim/``. Command ``:set runtimepath`` will show
 all such paths. Read ``:help runtimepath`` for more info.
