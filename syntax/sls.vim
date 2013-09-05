@@ -23,7 +23,7 @@ let b:current_syntax = ''
 unlet b:current_syntax
 syntax include @Jinja syntax/django.vim
 
-let g:NERDCustomDelimiters = { 
+let g:NERDCustomDelimiters = {
   \ 'sls': { 'left': '#' },
 \ }
 
