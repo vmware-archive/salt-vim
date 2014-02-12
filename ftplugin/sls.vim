@@ -2,12 +2,6 @@
 setlocal expandtab
 setlocal softtabstop=2
 setlocal shiftwidth=2
-" do not display right side colorcolumn
-if version >= 703
-    setlocal colorcolumn=
-endif
-
-setlocal wrap
 
 setlocal formatoptions=crl
 " r -> don't add comment leader after an Enter
@@ -39,7 +33,7 @@ setlocal indentexpr=GetYamlIndent()
 
 " folding
 setlocal foldmethod=indent
-setlocal foldlevel=6  " by default do not fold 
+setlocal foldlevel=6  " by default do not fold
 
 
 " Visual warning about UTF8 characters in SLS file.
