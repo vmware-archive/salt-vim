@@ -2,6 +2,7 @@
 setlocal expandtab
 setlocal softtabstop=2
 setlocal shiftwidth=2
+setlocal commentstring=#%s
 
 setlocal formatoptions=crl
 " r -> don't add comment leader after an Enter
