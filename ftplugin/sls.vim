@@ -48,3 +48,6 @@ augroup utfsls
   autocmd InsertLeave * match UTFsls /[\x7F-\xFF]/
   autocmd BufWinLeave * call clearmatches()
 augroup END
+
+" Slow yaml highlighting workaround
+setlocal regexpengine=1
