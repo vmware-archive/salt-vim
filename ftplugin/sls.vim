@@ -1,3 +1,8 @@
+" Slow yaml highlighting workaround
+if ('&regexpengine' == 0)
+  setlocal regexpengine=1
+endif
+
 " Use two-spaces for indentation
 setlocal expandtab
 setlocal softtabstop=2
@@ -48,8 +53,3 @@ augroup utfsls
   autocmd InsertLeave * match UTFsls /[\x7F-\xFF]/
   autocmd BufWinLeave * call clearmatches()
 augroup END
-
-" Slow yaml highlighting workaround
-if has('regexpengine')
-  setlocal regexpengine=1
-endif
