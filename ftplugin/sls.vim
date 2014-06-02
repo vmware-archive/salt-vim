@@ -50,4 +50,6 @@ augroup utfsls
 augroup END
 
 " Slow yaml highlighting workaround
-setlocal regexpengine=1
+if has('regexpengine')
+  setlocal regexpengine=1
+endif
