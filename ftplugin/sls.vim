@@ -48,8 +48,8 @@ augroup utfsls
   autocmd!
   highlight UTFsls ctermbg=red guibg=red
   match UTFsls /[\x7F-\xFF]/
-  autocmd BufWinEnter * match UTFsls /[\x7F-\xFF]/
-  autocmd InsertEnter * match UTFsls /[\x7F-\xFF]/
-  autocmd InsertLeave * match UTFsls /[\x7F-\xFF]/
-  autocmd BufWinLeave * call clearmatches()
+  autocmd BufWinEnter <buffer> match UTFsls /[\x7F-\xFF]/
+  autocmd InsertEnter <buffer> match UTFsls /[\x7F-\xFF]/
+  autocmd InsertLeave <buffer> match UTFsls /[\x7F-\xFF]/
+  autocmd BufWinLeave <buffer> call clearmatches()
 augroup END
