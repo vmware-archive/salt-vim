@@ -8,4 +8,4 @@ function! DetectSls()
   endif
 endfunction
 
-:au BufNewFile,BufRead *.sls call DetectSls()
+:au BufNewFile,BufRead *.sls,Saltfile call DetectSls()

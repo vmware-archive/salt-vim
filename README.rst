@@ -90,7 +90,8 @@ Files
     - Visual warning for non-ASCII characters (which are not allowed in YAML).
 
 ``ftdetect/sls.vim``
-    Detect SLS file by the file extension ``.sls``.
+    Detect SLS files by the file extension ``.sls``, and ``Saltfile`` files by
+    an exact filename match.
 
 
 Other VIM plugins you might find interesting
