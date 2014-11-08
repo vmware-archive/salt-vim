@@ -55,7 +55,7 @@ else
   syn region djangoComBlock start="{#" end="#}" contains=djangoTodo containedin=ALLBUT,@djangoBlocks
 endif
 
-syn keyword salt_stateSpecialArgs check_cmd listen listen_in onchanges onchanges_in onfail onfail_in onlyif prereq prereq_in require require_in unless use use_in watch watch_in containedin=yamlBlockMappingKey
+syn keyword salt_stateSpecialArgs check_cmd include extend name names listen listen_in onchanges onchanges_in onfail onfail_in onlyif prereq prereq_in require require_in unless use use_in watch watch_in containedin=yamlBlockMappingKey
 highlight link salt_stateSpecialArgs Special
 
 let g:NERDCustomDelimiters = {
