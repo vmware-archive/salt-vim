@@ -43,13 +43,12 @@ show all such paths. Read ``:help runtimepath`` for more info.
 Configuration
 =============
 
-By default, if Pathogen is installed, the syntax file will search for the
-existence of a Jinja syntax file (as described in the `Jinja docs`_ or via a
-`Vim bundle`_) in the ``runtimepath``, and load that if found. If it is not
-found or Pathogen is not installed, the Django template syntax file (which is
-slightly different, but bundled with Vim) will be used. You can force using
-either syntax file using the global variable ``g:sls_use_jinja_syntax``. If it
-is set, autodetection will be turned off.
+By default, the syntax file will search for the existence of a Jinja syntax
+file (as described in the `Jinja docs`_ or via a `Vim bundle`_) in the
+``runtimepath``, and load that if found. If it is not found, the Django
+template syntax file (which is slightly different, but bundled with Vim) will
+be used. You can force using either syntax file using the global variable
+``g:sls_use_jinja_syntax``. If it is set, autodetection will be turned off.
 
 .. _Jinja docs: http://jinja.pocoo.org/docs/integration/#vim
 .. _Vim bundle: https://github.com/Glench/Vim-Jinja2-Syntax
