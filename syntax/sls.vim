@@ -28,9 +28,9 @@ let s:search_for_jinja_syntax = 1
 if exists("g:sls_use_jinja_syntax")
   let s:search_for_jinja_syntax = 0
   let s:load_jinja_syntax = g:sls_use_jinja_syntax
-end
-if s:search_for_jinja_syntax && exists("*pathogen#runtime_findfile")
-  let s:jinja_path = pathogen#runtime_findfile("syntax/jinja.vim", 1)
+endif
+if s:search_for_jinja_syntax
+  let s:jinja_path = findfile("syntax/jinja.vim", &rtp, 1)
   if s:jinja_path != ""
     let s:load_jinja_syntax = 1
   endif
