@@ -40,6 +40,12 @@ Alternately, files can be copied into any other directory where Vim looks for
 its runtime files, like ``/etc/vim/``. The command ``:set runtimepath`` will
 show all such paths. Read ``:help runtimepath`` for more info.
 
+Too slow?
+==========
+Note that the default yaml highlighting that ships with vim is very slow with
+long lines (e.g., ssh keys, or certificates). You might want to switch to a 
+faster yaml highlighter, like `vim-yaml <https://github.com/stephpy/vim-yaml>`_.
+
 Configuration
 =============
 
