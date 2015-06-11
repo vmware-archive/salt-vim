@@ -18,6 +18,7 @@ You will also need to specify the following settings in your ``~/.vimrc``:
 
 .. code-block:: vim
 
+    syntax on
     set nocompatible
     filetype plugin indent on
 
@@ -31,6 +32,7 @@ If you get this, specify the following settings in your ``~/.vimrc`` instead:
 
 .. code-block:: vim
 
+    syntax on
     set nocompatible
     set tabstop=2
     set shiftwidth=2
