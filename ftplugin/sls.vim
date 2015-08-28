@@ -21,15 +21,21 @@ setlocal autoindent
 " Author: Ian Young
 "
 function! GetYamlIndent()
+  let cnum = v:lnum
   let lnum = v:lnum - 1
   if lnum == 0
     return 0
   endif
   let line = substitute(getline(lnum),'\s\+$','','')
+  let cline = substitute(getline(cnum),'\s\+$','','')
   let indent = indent(lnum)
   let increase = indent + &sw
+  let decrease = indent - &sw
   if line =~ ':$'
     return increase
+  elseif line !~ ':$' && cline =~ ':$'
+    return decrease
+  elseif line =~ ':$'
   else
     return indent
   endif
