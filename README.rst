@@ -2,17 +2,47 @@
 Vim files for working on Salt files
 ===================================
 
-Installing
+Installation
 ==========
+
+Using the Pathogen Plugin Manager
+---------------------------------
+
+The recommended method is to use
+`Pathogen <https://github.com/tpope/vim-pathogen>`_.
+Install Pathogen as described
+`here <https://github.com/tpope/vim-pathogen#installation>`_,
+then do:
 
 ::
 
+    cd ~/.vim/bundle && \
+    git clone git@github.com:saltstack/salt-vim.git
+
+Using the Vundle Plugin Manager
+-------------------------------
+
+See 
+`Vundle <https://github.com/gmarik/vundle>`_.
+
+Manual Method #1:
+-----------------
+
+::
+
+    git clone git@github.com:saltstack/salt-vim.git
+    cd salt-vim && \
     cp -r ftdetect ftplugin syntax  ~/.vim/
 
-Or (preferably) use one of the popular tools to (sanely) manage plugins:
+Manual Method #2:
+-----------------
 
-- `Pathogen <https://github.com/tpope/vim-pathogen>`_
-- `Vundle <https://github.com/gmarik/vundle>`_
+Alternately, files can be copied into any other directory where Vim looks for
+its runtime files, like ``/etc/vim/``. The command ``:set runtimepath`` will
+show all such paths. Read ``:help runtimepath`` for more info.
+
+For all installation methods:
+-----------------------------
 
 You will also need to specify the following settings in your ``~/.vimrc``:
 
@@ -37,10 +67,6 @@ If you get this, specify the following settings in your ``~/.vimrc`` instead:
     set tabstop=2
     set shiftwidth=2
     set expandtab
-
-Alternately, files can be copied into any other directory where Vim looks for
-its runtime files, like ``/etc/vim/``. The command ``:set runtimepath`` will
-show all such paths. Read ``:help runtimepath`` for more info.
 
 Too slow?
 ==========
