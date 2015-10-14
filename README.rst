@@ -1,39 +1,46 @@
-# Vim files for working on Salt files
+===================================
+Vim files for working on Salt files
+===================================
 
-## Installation
+Installing
+==========
 
-### Recommended Method #1: Pathogen
+Recommended Method #1: Pathogen
+-------------------------------
 
 The recommended method is to use
-[Pathogen] (https://github.com/tpope/vim-pathogen).
+`Pathogen <https://github.com/tpope/vim-pathogen>`_.
 Install Pathogen as described
-[here] (https://github.com/tpope/vim-pathogen#installation),
+`here <https://github.com/tpope/vim-pathogen#installation`_,
 then do:
 
 ::
     cd ~/.vim/bundle && \
     git clone git@github.com:saltstack/salt-vim.git
 
-### Recommended Method #2: Vundle
+Recommended Method #2: Vundle
+-----------------------------
 
 See 
-`Vundle <https://github.com/gmarik/vundle>`
-for instructions.
+`Vundle <https://github.com/gmarik/vundle>`_.
 
-### Manual Method #1:
+Manual Method #1:
+-----------------
 
 ::
     git clone git@github.com:saltstack/salt-vim.git
     cd salt-vim && \
     cp -r ftdetect ftplugin syntax  ~/.vim/
 
-### Manual Method #2:
+Manual Method #2:
+-----------------
 
 Alternately, files can be copied into any other directory where Vim looks for
 its runtime files, like ``/etc/vim/``. The command ``:set runtimepath`` will
 show all such paths. Read ``:help runtimepath`` for more info.
 
-### For all installation methods:
+For all installation methods:
+-----------------------------
 
 You will also need to specify the following settings in your ``~/.vimrc``:
 
@@ -59,13 +66,14 @@ If you get this, specify the following settings in your ``~/.vimrc`` instead:
     set shiftwidth=2
     set expandtab
 
-## Too slow?
-
+Too slow?
+==========
 Note that the default yaml highlighting that ships with vim is very slow with
 long lines (e.g., ssh keys, or certificates). You might want to switch to a 
 faster yaml highlighter, like `vim-yaml <https://github.com/stephpy/vim-yaml>`_.
 
-## Configuration
+Configuration
+=============
 
 By default, the syntax file will search for the existence of a Jinja syntax
 file (as described in the `Jinja docs`_ or via a `Vim bundle`_) in the
@@ -92,7 +100,8 @@ Example section of ``~/.vimrc``:
     " Force using the Django template syntax file
     let g:sls_use_jinja_syntax = 0
 
-## Files
+Files
+=====
 
 ``syntax/sls.vim``
     Syntax file for editing YAML + Jinja SLS files.
@@ -116,7 +125,8 @@ Example section of ``~/.vimrc``:
     an exact filename match.
 
 
-## Other VIM plugins you might find interesting
+Other VIM plugins you might find interesting
+============================================
 
 - `Powerline <https://github.com/Lokaltog/vim-powerline>`_
 - `NERDTree <https://github.com/scrooloose/nerdtree>`_
