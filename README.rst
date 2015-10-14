@@ -1,16 +1,13 @@
-===================================
-Vim files for working on Salt files
-===================================
+# Vim files for working on Salt files
 
-Installing
-==========
+## Installation
 
 ### Recommended Method #1: Pathogen
 
 The recommended method is to use
-`Pathogen <https://github.com/tpope/vim-pathogen>`.
+[Pathogen] (https://github.com/tpope/vim-pathogen).
 Install Pathogen as described
-`here <https://github.com/tpope/vim-pathogen#installation`,
+[here] (https://github.com/tpope/vim-pathogen#installation),
 then do:
 
 ::
@@ -62,14 +59,13 @@ If you get this, specify the following settings in your ``~/.vimrc`` instead:
     set shiftwidth=2
     set expandtab
 
-Too slow?
-==========
+## Too slow?
+
 Note that the default yaml highlighting that ships with vim is very slow with
 long lines (e.g., ssh keys, or certificates). You might want to switch to a 
 faster yaml highlighter, like `vim-yaml <https://github.com/stephpy/vim-yaml>`_.
 
-Configuration
-=============
+## Configuration
 
 By default, the syntax file will search for the existence of a Jinja syntax
 file (as described in the `Jinja docs`_ or via a `Vim bundle`_) in the
@@ -96,8 +92,7 @@ Example section of ``~/.vimrc``:
     " Force using the Django template syntax file
     let g:sls_use_jinja_syntax = 0
 
-Files
-=====
+## Files
 
 ``syntax/sls.vim``
     Syntax file for editing YAML + Jinja SLS files.
@@ -121,8 +116,7 @@ Files
     an exact filename match.
 
 
-Other VIM plugins you might find interesting
-============================================
+## Other VIM plugins you might find interesting
 
 - `Powerline <https://github.com/Lokaltog/vim-powerline>`_
 - `NERDTree <https://github.com/scrooloose/nerdtree>`_
