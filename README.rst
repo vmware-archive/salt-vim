@@ -11,10 +11,11 @@ Recommended Method #1: Pathogen
 The recommended method is to use
 `Pathogen <https://github.com/tpope/vim-pathogen>`_.
 Install Pathogen as described
-`here <https://github.com/tpope/vim-pathogen#installation`_,
+`here <https://github.com/tpope/vim-pathogen#installation>`_,
 then do:
 
 ::
+
     cd ~/.vim/bundle && \
     git clone git@github.com:saltstack/salt-vim.git
 
@@ -28,6 +29,7 @@ Manual Method #1:
 -----------------
 
 ::
+
     git clone git@github.com:saltstack/salt-vim.git
     cd salt-vim && \
     cp -r ftdetect ftplugin syntax  ~/.vim/
