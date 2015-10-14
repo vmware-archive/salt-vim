@@ -2,11 +2,11 @@
 Vim files for working on Salt files
 ===================================
 
-Installing
+Installation
 ==========
 
-Recommended Method #1: Pathogen
--------------------------------
+Using the Pathogen Plugin Manager
+---------------------------------
 
 The recommended method is to use
 `Pathogen <https://github.com/tpope/vim-pathogen>`_.
@@ -19,8 +19,8 @@ then do:
     cd ~/.vim/bundle && \
     git clone git@github.com:saltstack/salt-vim.git
 
-Recommended Method #2: Vundle
------------------------------
+Using the Vundle Plugin Manager
+-------------------------------
 
 See 
 `Vundle <https://github.com/gmarik/vundle>`_.
