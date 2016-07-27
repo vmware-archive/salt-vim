@@ -17,7 +17,7 @@ then do:
 ::
 
     cd ~/.vim/bundle && \
-    git clone git@github.com:saltstack/salt-vim.git
+    git clone https://github.com/saltstack/salt-vim.git
 
 Using the Vundle Plugin Manager
 -------------------------------
@@ -30,7 +30,7 @@ Manual Method #1:
 
 ::
 
-    git clone git@github.com:saltstack/salt-vim.git
+    git clone https://github.com/saltstack/salt-vim.git
     cd salt-vim && \
     cp -r ftdetect ftplugin syntax  ~/.vim/
 
