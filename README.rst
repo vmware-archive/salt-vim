@@ -3,7 +3,7 @@ Vim files for working on Salt files
 ===================================
 
 Installation
-==========
+============
 
 Using the Pathogen Plugin Manager
 ---------------------------------
@@ -22,7 +22,7 @@ then do:
 Using the Vundle Plugin Manager
 -------------------------------
 
-See 
+See
 `Vundle <https://github.com/gmarik/vundle>`_.
 
 Manual Method #1:
@@ -69,9 +69,10 @@ If you get this, specify the following settings in your ``~/.vimrc`` instead:
     set expandtab
 
 Too slow?
-==========
+=========
+
 Note that the default yaml highlighting that ships with vim is very slow with
-long lines (e.g., ssh keys, or certificates). You might want to switch to a 
+long lines (e.g., ssh keys, or certificates). You might want to switch to a
 faster yaml highlighter, like `vim-yaml <https://github.com/stephpy/vim-yaml>`_.
 
 Configuration
@@ -125,7 +126,6 @@ Files
 ``ftdetect/sls.vim``
     Detect SLS files by the file extension ``.sls``, and ``Saltfile`` files by
     an exact filename match.
-
 
 Other VIM plugins you might find interesting
 ============================================
