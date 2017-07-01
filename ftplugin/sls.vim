@@ -45,7 +45,7 @@ setlocal indentexpr=GetYamlIndent()
 
 " folding
 setlocal foldmethod=indent
-setlocal foldlevel=6  " by default do not fold
+setlocal foldlevel=20  " by default do not fold
 
 
 " Visual warning about UTF8 characters in SLS file.
